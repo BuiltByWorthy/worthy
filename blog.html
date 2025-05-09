@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Worthy G</title>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --vibrant-pink: #ff5faf;
+      --vibrant-orange: #ff9f43;
+      --vibrant-purple: #9c27b0;
+      --vibrant-blue: #2196f3;
+      --vibrant-yellow: #fdd835;
+    }
+  </style>
+</head>
+
+<body class="font-[Figtree] bg-white text-[#1a1a1a] pt-16">
+  <nav class="fixed w-full top-0 left-0 bg-white shadow-md px-8 py-4 flex justify-between items-center z-50">
+    <a href="index.html" class="text-xl font-bold text-[var(--vibrant-pink)]">Worthy G</a>
+    <div class="flex space-x-6 text-sm font-semibold">
+      <a href="index.html#about" class="text-[var(--vibrant-purple)]">About</a>
+      <a href="projects.html" class="text-[var(--vibrant-purple)]">Projects</a>
+      <a href="blog.html" class="text-[var(--vibrant-purple)]">Blog</a>
+      <a href="index.html#resume" class="text-[var(--vibrant-purple)]">Resume</a>
+      <a href="index.html#contact" class="text-[var(--vibrant-purple)]">Contact</a>
+    </div>
+  </nav>
+
+  <header class="bg-gradient-to-br from-[var(--vibrant-yellow)] to-[var(--vibrant-orange)] text-white text-center py-24 px-6">
+    <h1 class="text-5xl font-bold mb-4">Worthy G Blog</h1>
+    <p class="text-lg">Insights on SRE, DevOps, and engineering resilience</p>
+  </header>
+
+  <main class="max-w-5xl mx-auto py-20 px-6">
+    <div id="blog-posts" class="grid gap-8 md:grid-cols-2">
+      <!-- Blog posts will be inserted here -->
+    </div>
+  </main>
+
+  <footer class="text-center py-6 text-gray-600">
+    <p>&copy; 2025 Worthy G. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const posts = [
+      {
+        title: "Mastering Terraform Workspaces",
+        excerpt: "A practical guide to managing environments with Terraform.",
+        link: "blog/terraform-workspaces.html"
+      },
+      {
+        title: "SLIs, SLOs, and Error Budgets",
+        excerpt: "Breaking down core SRE concepts for reliability at scale.",
+        link: "blog/sre-metrics.html"
+      }
+    ];
+
+    const container = document.getElementById("blog-posts");
+    posts.forEach(post => {
+      const div = document.createElement("div");
+      div.className = "bg-white border border-gray-200 p-6 rounded-xl shadow hover:shadow-lg";
+      div.innerHTML = `
+        <h2 class="text-2xl font-semibold text-[var(--vibrant-pink)] mb-2">${post.title}</h2>
+        <p class="text-gray-700 mb-4">${post.excerpt}</p>
+        <a href="${post.link}" class="text-[var(--vibrant-blue)] font-semibold hover:underline">Read More →</a>
+      `;
+      container.appendChild(div);
+    });
+  </script>
+</body>
+
+</html>
