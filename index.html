@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worthy G | SRE & DevOps Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --vibrant-pink: #ff5faf;
+      --vibrant-orange: #ff9f43;
+      --vibrant-purple: #9c27b0;
+      --vibrant-blue: #2196f3;
+      --vibrant-yellow: #fdd835;
+    }
+  </style>
+</head>
+
+<body class="font-[Figtree] bg-white text-[#1a1a1a] pt-16">
+  <nav class="fixed w-full top-0 left-0 bg-white shadow-md px-8 py-4 flex justify-between items-center z-50">
+    <a href="#" class="text-xl font-bold text-[var(--vibrant-pink)]">Worthy G</a>
+    <div class="flex space-x-6 text-sm font-semibold">
+      <a href="#about" class="text-[var(--vibrant-purple)]">About</a>
+      <a href="#projects" class="text-[var(--vibrant-purple)]">Projects</a>
+      <a href="#blog" class="text-[var(--vibrant-purple)]">Blog</a>
+      <a href="#resume" class="text-[var(--vibrant-purple)]">Resume</a>
+      <a href="#contact" class="text-[var(--vibrant-purple)]">Contact</a>
+    </div>
+  </nav>
+
+  <header class="bg-gradient-to-br from-[var(--vibrant-pink)] to-[var(--vibrant-orange)] text-white text-center py-32 px-6">
+    <h1 class="text-5xl font-bold mb-4">Worthy G</h1>
+    <p class="text-xl mb-6">Site Reliability Engineer | DevOps Enthusiast | System Builder</p>
+    <a href="#contact" class="bg-white text-[var(--vibrant-orange)] font-semibold px-6 py-3 rounded-full hover:bg-[var(--vibrant-yellow)] transition">Let's Connect</a>
+  </header>
+
+  <section id="about" class="py-20 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-[var(--vibrant-blue)] mb-6">About Me</h2>
+    <p class="text-lg text-gray-700">I'm Worthy G, a passionate SRE focused on building resilient, scalable, and observable infrastructure. I work with modern cloud-native technologies to empower startups and engineering teams to move fast—safely.</p>
+  </section>
+
+  <section id="projects" class="py-20 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-[var(--vibrant-blue)] text-center mb-12">Featured Projects</h2>
+    <div class="grid gap-8 md:grid-cols-2">
+      <div class="border border-gray-200 p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--vibrant-pink)]">Kubernetes Monitoring Stack</h3>
+        <p>Built a monitoring stack with Prometheus, Grafana, and Loki for real-time observability across clusters.</p>
+      </div>
+      <div class="border border-gray-200 p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--vibrant-orange)]">CI/CD for Microservices</h3>
+        <p>Implemented GitHub Actions pipelines for continuous deployment with automated testing and rollout checks.</p>
+      </div>
+    </div>
+    <div class="text-center mt-10">
+      <a href="projects.html" class="inline-block bg-[var(--vibrant-purple)] text-white px-6 py-3 rounded-full font-semibold hover:bg-[var(--vibrant-blue)] transition">View All Projects</a>
+    </div>
+  </section>
+
+  <section id="blog" class="bg-[var(--vibrant-yellow)] py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold text-white mb-6">Latest Blog Posts</h2>
+    <div id="blog-list" class="max-w-4xl mx-auto space-y-6">
+      <!-- JavaScript will inject blog posts here -->
+    </div>
+    <div class="mt-10">
+      <a href="blog.html" class="inline-block bg-white text-[var(--vibrant-yellow)] px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">Read All Posts</a>
+    </div>
+  </section>
+
+  <section id="resume" class="py-20 px-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-[var(--vibrant-blue)] mb-6">Resume</h2>
+    <a href="/resume.pdf" class="inline-block bg-[var(--vibrant-purple)] text-white font-semibold px-6 py-3 rounded-full hover:bg-[var(--vibrant-pink)] transition">Download Resume</a>
+  </section>
+
+  <section id="contact" class="bg-[var(--vibrant-blue)] text-white py-20 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Get In Touch</h2>
+    <form class="max-w-xl mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg text-black placeholder-gray-600">
+      <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg text-black placeholder-gray-600">
+      <textarea rows="5" placeholder="Your Message" class="w-full px-4 py-3 rounded-lg text-black placeholder-gray-600"></textarea>
+      <button type="submit" class="bg-[var(--vibrant-orange)] text-white px-6 py-3 rounded-full font-semibold hover:bg-[var(--vibrant-pink)] transition">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="text-center py-6 text-gray-600">
+    <p>&copy; 2025 Worthy G. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Dummy blog post loader (replace with actual CMS or markdown loader in real setup)
+    const posts = [
+      {
+        title: "Mastering Terraform Workspaces",
+        excerpt: "A practical guide to managing environments with Terraform.",
+        link: "blog/terraform-workspaces.html"
+      },
+      {
+        title: "SLIs, SLOs, and Error Budgets",
+        excerpt: "Breaking down core SRE concepts for reliability at scale.",
+        link: "blog/sre-metrics.html"
+      }
+    ];
+    const container = document.getElementById("blog-list");
+    posts.forEach(post => {
+      const div = document.createElement("div");
+      div.className = "bg-white rounded-xl p-6 text-left shadow";
+      div.innerHTML = `
+        <h3 class="text-xl font-semibold text-[var(--vibrant-pink)] mb-2">${post.title}</h3>
+        <p class="text-gray-700 mb-2">${post.excerpt}</p>
+        <a href="${post.link}" class="text-[var(--vibrant-blue)] font-semibold hover:underline">Read more →</a>
+      `;
+      container.appendChild(div);
+    });
+  </script>
+</body>
+
+</html>
