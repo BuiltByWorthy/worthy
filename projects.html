@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Worthy G</title>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --vibrant-pink: #ff5faf;
+      --vibrant-orange: #ff9f43;
+      --vibrant-purple: #9c27b0;
+      --vibrant-blue: #2196f3;
+      --vibrant-yellow: #fdd835;
+    }
+  </style>
+</head>
+
+<body class="font-[Figtree] bg-white text-[#1a1a1a] pt-16">
+  <nav class="fixed w-full top-0 left-0 bg-white shadow-md px-8 py-4 flex justify-between items-center z-50">
+    <a href="index.html" class="text-xl font-bold text-[var(--vibrant-pink)]">Worthy G</a>
+    <div class="flex space-x-6 text-sm font-semibold">
+      <a href="index.html#about" class="text-[var(--vibrant-purple)]">About</a>
+      <a href="projects.html" class="text-[var(--vibrant-purple)]">Projects</a>
+      <a href="index.html#blog" class="text-[var(--vibrant-purple)]">Blog</a>
+      <a href="index.html#resume" class="text-[var(--vibrant-purple)]">Resume</a>
+      <a href="index.html#contact" class="text-[var(--vibrant-purple)]">Contact</a>
+    </div>
+  </nav>
+
+  <section class="pt-32 pb-20 px-6 max-w-5xl mx-auto">
+    <h1 class="text-4xl font-bold text-center text-[var(--vibrant-blue)] mb-12">All Projects</h1>
+    <div class="grid gap-10 md:grid-cols-2">
+      <div class="border border-gray-200 p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--vibrant-pink)]">Kubernetes Monitoring Stack</h3>
+        <p>Built a monitoring stack with Prometheus, Grafana, and Loki for real-time observability across clusters.</p>
+      </div>
+      <div class="border border-gray-200 p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--vibrant-orange)]">CI/CD for Microservices</h3>
+        <p>Implemented GitHub Actions pipelines for continuous deployment with automated testing and rollout checks.</p>
+      </div>
+      <div class="border border-gray-200 p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--vibrant-purple)]">Infrastructure as Code (IaC)</h3>
+        <p>Provisioned scalable cloud environments using Terraform, focused on repeatability and automation.</p>
+      </div>
+      <div class="border border-gray-200 p-6 rounded-xl shadow hover:shadow-lg">
+        <h3 class="text-xl font-semibold mb-2 text-[var(--vibrant-yellow)]">Incident Response Automation</h3>
+        <p>Designed alerting and auto-remediation playbooks using PagerDuty and custom Lambda scripts.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 text-gray-600">
+    <p>&copy; 2025 Worthy G. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
