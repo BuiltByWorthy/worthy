@@ -7,6 +7,7 @@
   <title>Projects | Worthy G</title>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="scripts/toggleMenu.js" defer></script>
   <style>
     :root {
       --vibrant-pink: #ff5faf;
@@ -19,16 +20,35 @@
 </head>
 
 <body class="font-[Figtree] bg-white text-[#1a1a1a] pt-16">
-  <nav class="fixed w-full top-0 left-0 bg-white shadow-md px-8 py-4 flex justify-between items-center z-50">
+    <nav class="fixed w-full top-0 left-0 bg-white shadow-md px-6 py-4 flex justify-between items-center z-50">
     <a href="index.html" class="text-xl font-bold text-[var(--vibrant-pink)]">Worthy G</a>
-    <div class="flex space-x-6 text-sm font-semibold">
+    <div class="md:hidden">
+      <button id="menu-toggle" class="text-[var(--vibrant-purple)] focus:outline-none">
+        <!-- Hamburger icon -->
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="nav-links" class="hidden md:flex space-x-6 text-sm font-semibold">
       <a href="index.html#about" class="text-[var(--vibrant-purple)]">About</a>
       <a href="projects.html" class="text-[var(--vibrant-purple)]">Projects</a>
-      <a href="index.html#blog" class="text-[var(--vibrant-purple)]">Blog</a>
+      <a href="blog.html" class="text-[var(--vibrant-purple)]">Blog</a>
       <a href="index.html#resume" class="text-[var(--vibrant-purple)]">Resume</a>
       <a href="index.html#contact" class="text-[var(--vibrant-purple)]">Contact</a>
     </div>
   </nav>
+  
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="md:hidden hidden px-6 pt-20 pb-4 space-y-4 text-sm font-semibold">
+    <a href="index.html#about" class="block text-[var(--vibrant-purple)]">About</a>
+    <a href="projects.html" class="block text-[var(--vibrant-purple)]">Projects</a>
+    <a href="blog.html" class="block text-[var(--vibrant-purple)]">Blog</a>
+    <a href="index.html#resume" class="block text-[var(--vibrant-purple)]">Resume</a>
+    <a href="index.html#contact" class="block text-[var(--vibrant-purple)]">Contact</a>
+  </div>
+
 
   <section class="pt-32 pb-20 px-6 max-w-5xl mx-auto">
     <h1 class="text-4xl font-bold text-center text-[var(--vibrant-blue)] mb-12">All Projects</h1>
